@@ -1,44 +1,43 @@
-## Первначальная настройка
-git config --global user.name <..> - имя для комитов  
-git config --global user.email <..> - мыло для комитов  
+## Startup settings
+git config --global user.name <..> - name for making commit 
+git config --global user.email <..> - email address
 git config --list  
 
-## Основные команды
-git init - инициализация нового репозитория  
-git status - посмотреть состояние комита (список подготовленных файлов для комита), текущее состояние репозитория  
-git add <files> - добавить файлы которые нужно сохранить в репозиторий (добавление изменения в индекс), подготовка файлов перед коммитом  
-git commit -m "<message>"- создание комита (сохрание в репозиторий)  
-git log - история изменений  
-git checkout <commit hash>- перейти к определенной версии проекта  
-git checkout <branch name> - перейти в определенную ветку  
-git cat-file -t <hash> - прочитать хэшированный файл (тип Объектов git)  
-git cat-file -p <hash> - содержимое коммита  
-git checkout master - вернуться в ветку master (возвращает указатель HEAD)  
+## Main commands
+git init - initialize new repo
+git status - show commit status (show list files which ready to commit), show current repo status
+git add <files> - add files which need to save in repo (add changes to index), make files ready for commit
+git commit -m "<message>"- make commit (save in repo)  
+git log - history of changes  
+git checkout <commit hash>- go to commit hash version
+git checkout <branch name> - go to "branch name" branch
+git cat-file -t <hash> - read hash file
+git cat-file -p <hash> - cat commit information
+git checkout master - back to 'master' branch (back pointer HEAD)  
 
-## Cтатусы отслеживания файлов
+## Trackable status
+untracked
+Unmodified
+Modified
+Staged
 
-untracked - неотслеживаемый  
-Unmodified - немодифицированный  
-Modified - модифицированный  
-Staged - подготовленный  
+## Objects type in GIT
 
-## Типы объектов в GIT
+Blob - file  
+Tree - folder
+Commit 
+Annotated Tag  
+Commit - pointer to tree 
+Branch - link to last commit  
 
-Blob - файл  
-Tree - папка  
-Commit - коммит  
-Annotated Tag - аннотированный тег  
-Commit - указатель на дерево  
-Ветка - ссылка на последний коммит  
+## Branches in GIT
 
-## Ветки GIT
-
-git branch <branch name> - создание ветки  
-git checkput <branch name> - переключиться на ветку (перемещает указатель HEAD на определенную ветку)  
-git checkout -b <branch name> - создание ветки и переход в нее  
-git branch - список текущих ветвей  
-git branch -m <new branch name> - переименовать текущую ветку  
-git branch -d <branch name> - удалить ветку  
+git branch <branch name> - creating branch 
+git checkput <branch name> - change to branch (pointer HEAD to 'branche name')  
+git checkout -b <branch name> - creating branch and to it  
+git branch - current branches list
+git branch -m <new branch name> - rename current branch
+git branch -d <branch name> - delete branch
 
 ## Cлияние веток
 
