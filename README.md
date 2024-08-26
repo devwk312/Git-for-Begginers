@@ -1,43 +1,43 @@
 ## Startup settings
 git config --global user.name <..> - name for making commit 
-git config --global user.email <..> - email address
-git config --list  
+git config --global user.email <..> - email address 
+git config --list 
 
 ## Main commands
-git init - initialize new repo
-git status - show commit status (show list files which ready to commit), show current repo status
-git add <files> - add files which need to save in repo (add changes to index), make files ready for commit
-git commit -m "<message>"- make commit (save in repo)  
-git log - history of changes  
-git checkout <commit hash>- go to commit hash version
-git checkout <branch name> - go to "branch name" branch
-git cat-file -t <hash> - read hash file
-git cat-file -p <hash> - cat commit information
-git checkout master - back to 'master' branch (back pointer HEAD)  
+git init - initialize new repo 
+git status - show commit status (show list files which ready to commit), show current repo status 
+git add <files> - add files which need to save in repo (add changes to index), make files ready for commit 
+git commit -m "<message>"- make commit (save in repo) 
+git log - history of changes 
+git checkout <commit hash>- go to commit hash version 
+git checkout <branch name> - go to "branch name" branch 
+git cat-file -t <hash> - read hash file 
+git cat-file -p <hash> - cat commit information 
+git checkout master - back to 'master' branch (back pointer HEAD) 
 
 ## Trackable status
-untracked
-Unmodified
-Modified
-Staged
+untracked 
+Unmodified 
+Modified 
+Staged 
 
 ## Objects type in GIT
 
-Blob - file  
-Tree - folder
+Blob - file 
+Tree - folder 
 Commit 
-Annotated Tag  
+Annotated Tag 
 Commit - pointer to tree 
-Branch - link to last commit  
+Branch - link to last commit 
 
 ## Branches in GIT
 
 git branch <branch name> - creating branch 
-git checkput <branch name> - change to branch (pointer HEAD to 'branche name')  
-git checkout -b <branch name> - creating branch and to it  
-git branch - current branches list
-git branch -m <new branch name> - rename current branch
-git branch -d <branch name> - delete branch
+git checkput <branch name> - change to branch (pointer HEAD to 'branche name') 
+git checkout -b <branch name> - creating branch and to it 
+git branch - current branches list 
+git branch -m <new branch name> - rename current branch 
+git branch -d <branch name> - delete branch 
 
 ## Cлияние веток
 
